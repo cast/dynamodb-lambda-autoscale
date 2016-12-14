@@ -6,6 +6,7 @@ import Throughput from './utils/Throughput';
 import ProvisionerLogging from './provisioning/ProvisionerLogging';
 import { Region } from './configuration/Region';
 import DefaultProvisioner from './configuration/DefaultProvisioner';
+import FixedToOneProvisioner from './configuration/FixedToOneProvisioner';
 import { invariant } from './Global';
 import type { TableProvisionedAndConsumedThroughput, ProvisionerConfig, AdjustmentContext } from './flow/FlowTypes';
 
@@ -34,7 +35,7 @@ export default class Provisioner extends ProvisionerConfigurableBase {
   getTableConfig(data: TableProvisionedAndConsumedThroughput): ProvisionerConfig {
 
     // Option 1 - Default settings for all tables
-    return DefaultProvisioner;
+    return FixedToOneProvisioner;
 
     // Option 2 - Bespoke table specific settings
     // return data.TableName === 'Table1' ? Climbing : Default;

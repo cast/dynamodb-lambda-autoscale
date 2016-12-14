@@ -1,0 +1,22 @@
+{
+  "ReadCapacity": {
+    "Min": 1,
+    "Max": 1,
+    "Increment":{
+      "When":{}
+    },
+    "Decrement":{
+      "When":{}
+    }
+  },
+  "WriteCapacity": {
+    "Min": 1,
+    "Max": 1,
+    "Increment":{
+      "When":{}
+    },
+    "Decrement":{
+      "When":{}
+    }
+  }
+}
