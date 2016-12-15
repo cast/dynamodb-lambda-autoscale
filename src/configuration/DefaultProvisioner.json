@@ -4,13 +4,16 @@
     "Max": 100,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 60
+        "UtilisationIsAbovePercent": 75,
+        "ThrottledEventsPerMinuteIsAbove": 25
       },
       "By": {
-        "Units": 10
+        "Units": 3,
+        "ProvisionedPercent": 30,
+        "ThrottledEventsWithMultiplier": 0.7
       },
       "To": {
-        "ConsumedPercent": 160
+        "ConsumedPercent": 130
       }
     },
     "Decrement": {
@@ -18,7 +21,7 @@
         "UtilisationIsBelowPercent": 30,
         "AfterLastIncrementMinutes": 60,
         "AfterLastDecrementMinutes": 60,
-        "UnitAdjustmentGreaterThan": 2
+        "UnitAdjustmentGreaterThan": 5
       },
       "To": {
         "ConsumedPercent": 100
@@ -30,13 +33,16 @@
     "Max": 100,
     "Increment": {
       "When": {
-        "UtilisationIsAbovePercent": 60
+        "UtilisationIsAbovePercent": 75,
+        "ThrottledEventsPerMinuteIsAbove": 25
       },
       "By": {
-        "Units": 10
+        "Units": 3,
+        "ProvisionedPercent": 30,
+        "ThrottledEventsWithMultiplier": 0.7
       },
       "To": {
-        "ConsumedPercent": 160
+        "ConsumedPercent": 130
       }
     },
     "Decrement": {
@@ -44,7 +50,7 @@
         "UtilisationIsBelowPercent": 30,
         "AfterLastIncrementMinutes": 60,
         "AfterLastDecrementMinutes": 60,
-        "UnitAdjustmentGreaterThan": 2
+        "UnitAdjustmentGreaterThan": 5
       },
       "To": {
         "ConsumedPercent": 100
